@@ -9,22 +9,29 @@ gsap.registerPlugin(useGSAP);
 
 const projects = [
   {
-    title: "Hotel Management with AI Chatbot",
-    category: "Full-Stack Web Dev & AI",
-    tools: "Laravel, MySQL, HTML, CSS, Bootstrap, JavaScript, ChatGPT APIs",
-    image: assetPath("images/hotel_app.webp"),
+    title: "Laravel Hotel Project - Hostily",
+    category: "AI-Powered Hotel Booking Platform",
+    description:
+      "Built a Laravel-based hotel booking platform with smart guest assistance, instant support, and personalized room recommendations for a smoother booking experience.",
+    tools: "Laravel, AI chatbot integration, recommendation algorithms",
+    image: assetPath("images/hostily-project.png"),
   },
   {
-    title: "AI Chatbot Website Assistant",
-    category: "AI Engineering & Automation",
-    tools: "Python, ChatGPT API, Claude, Prompt Engineering, API Integration",
-    image: assetPath("images/chatbot_app.webp"),
+    title: "AI Voice Agent",
+    category: "Voice-Enabled Conversational Assistant",
+    description:
+      "Created a real-time AI voice assistant that handles natural conversations with speech input and spoken responses through flexible agent workflows.",
+    tools:
+      "Python, OpenAI Agents SDK, speech-to-text, text-to-speech, Textual",
+    image: assetPath("images/ai-voice-agent.png"),
   },
   {
-    title: "Automated Prompt Workflows",
-    category: "Automation",
-    tools: "LLMs, Prompt Tuning, Python, GitHub, Postman, Custom Automations",
-    image: assetPath("images/automation_app.webp"),
+    title: "AI Resume Analyzer",
+    category: "Intelligent Resume Screening Tool",
+    description:
+      "Developed an AI resume screening app that compares resumes with job descriptions and returns fast compatibility insights through automated matching.",
+    tools: "Streamlit, PDF parsing, text similarity techniques",
+    image: assetPath("images/ai-resume-analyzer.png"),
   },
 ];
 
@@ -87,7 +94,9 @@ const Work = () => {
                     <p>{project.category}</p>
                   </div>
                 </div>
-                <h4>Tools and features</h4>
+                <h4>Project summary</h4>
+                <p>{project.description}</p>
+                <h4>Stack and features</h4>
                 <p>{project.tools}</p>
               </div>
               <WorkImage image={project.image} alt={project.title} />

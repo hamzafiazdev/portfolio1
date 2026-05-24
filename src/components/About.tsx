@@ -6,7 +6,7 @@ const About = () => {
       <div className="about-me">
         <h3 className="title">About Me</h3>
         <p className="para">
-          Motivated and detail-oriented Computer Science undergraduate with a strong interest in Artificial Intelligence, Automation, and Full-Stack Development. Experienced in building AI-powered web applications including chatbots and recommendation systems. Passionate about leveraging AI tools and prompt engineering to create intelligent, user-focused solutions.
+          Computer Science undergraduate focused on Artificial Intelligence, Automation, and Full-Stack Development, with hands-on experience building AI-powered web apps and user-focused solutions.
         </p>
       </div>
     </div>
