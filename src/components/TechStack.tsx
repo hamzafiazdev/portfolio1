@@ -10,19 +10,20 @@ import {
   CylinderCollider,
   RapierRigidBody,
 } from "@react-three/rapier";
+import { assetPath } from "../utils/assetPath";
 
 const textureLoader = new THREE.TextureLoader();
 const imageUrls = [
-  "/images/react2.webp",
-  "/images/next2.webp",
-  "/images/node2.webp",
-  "/images/express.webp",
-  "/images/mongo.webp",
-  "/images/mysql.webp",
-  "/images/typescript.webp",
-  "/images/javascript.webp",
+  "images/react2.webp",
+  "images/next2.webp",
+  "images/node2.webp",
+  "images/express.webp",
+  "images/mongo.webp",
+  "images/mysql.webp",
+  "images/typescript.webp",
+  "images/javascript.webp",
 ];
-const textures = imageUrls.map((url) => textureLoader.load(url));
+const textures = imageUrls.map((url) => textureLoader.load(assetPath(url)));
 
 const sphereGeometry = new THREE.SphereGeometry(1, 28, 28);
 
@@ -199,7 +200,7 @@ const TechStack = () => {
           ))}
         </Physics>
         <Environment
-          files="/models/char_enviorment.hdr"
+          files={assetPath("models/char_enviorment.hdr")}
           environmentIntensity={0.5}
           environmentRotation={[0, 4, 2]}
         />

@@ -3,6 +3,7 @@ import WorkImage from "./WorkImage";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
+import { assetPath } from "../utils/assetPath";
 
 gsap.registerPlugin(useGSAP);
 
@@ -11,19 +12,19 @@ const projects = [
     title: "Hotel Management with AI Chatbot",
     category: "Full-Stack Web Dev & AI",
     tools: "Laravel, MySQL, HTML, CSS, Bootstrap, JavaScript, ChatGPT APIs",
-    image: "/images/hotel_app.webp",
+    image: assetPath("images/hotel_app.webp"),
   },
   {
     title: "AI Chatbot Website Assistant",
     category: "AI Engineering & Automation",
     tools: "Python, ChatGPT API, Claude, Prompt Engineering, API Integration",
-    image: "/images/chatbot_app.webp",
+    image: assetPath("images/chatbot_app.webp"),
   },
   {
     title: "Automated Prompt Workflows",
     category: "Automation",
     tools: "LLMs, Prompt Tuning, Python, GitHub, Postman, Custom Automations",
-    image: "/images/automation_app.webp",
+    image: assetPath("images/automation_app.webp"),
   },
 ];
 
