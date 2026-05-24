@@ -3,7 +3,7 @@ import react from "@vitejs/plugin-react";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: process.env.GITHUB_ACTIONS ? "/portfolio/" : "/",
+  base: process.env.GITHUB_ACTIONS ? "/portfolio1/" : "/",
   plugins: [react()],
   build: {
     chunkSizeWarningLimit: 1000,
