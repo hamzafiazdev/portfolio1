@@ -20,7 +20,7 @@ export default defineConfig({
             "@react-three/rapier",
             "@react-three/cannon",
           ],
-          "vendor-gsap": ["gsap", "gsap-trial"],
+          "vendor-gsap": ["gsap"],
         },
       },
     },
