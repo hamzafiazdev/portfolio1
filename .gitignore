@@ -30,3 +30,4 @@ backup/
 
 # Scratch / temp files
 test.js
+.vercel
